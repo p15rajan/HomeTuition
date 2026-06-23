@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Home Tuition</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="site-brand" href="index.html">
+      <div class="brand-icon">∑</div>
+      <div class="brand-text">Mrs. Selvi Packiarajan<span>Mathematics Tutor · Chennai</span></div>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="classes.html">Classes</a>
+      <a href="records.html">Records</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="location.html">Location</a>
+      <a href="contact.html" class="nav-cta">Book Demo</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Everything you need to know before enrolling.</p>
+  <div class="hero-bar"></div>
+</div>
+
+<main style="max-width:760px;">
+  <div class="section-label">Common Questions</div>
+  <h2>We've Got Answers</h2>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <div class="faq-question">What subjects do you teach?</div>
+      <div class="faq-answer">
+        <p>We specialise exclusively in Mathematics (and Applied Mathematics) for classes 6th to 12th across CBSE, ICSE, and IGCSE boards.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you offer online or offline classes?</div>
+      <div class="faq-answer">
+        <p>Both options are available. Offline sessions are conducted in Chennai only. Online classes are open to students across India.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What are the class timings?</div>
+      <div class="faq-answer">
+        <p>Evening slots are available from <strong>3:00 PM to 7:30 PM</strong> on weekdays and weekends. Timings are flexible and adjusted to suit each student's school schedule.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How are fees structured?</div>
+      <div class="faq-answer">
+        <p>Fees depend on the grade level and board. Discounts are available for group enrollments and long-term commitments. Please <a href="contact.html">contact us</a> for a personalised fee quote.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you provide demo classes?</div>
+      <div class="faq-answer">
+        <p>Yes! We offer a <strong>free demo class</strong> so students and parents can experience the teaching approach before committing. <a href="contact.html">Book yours today →</a></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do you track student progress?</div>
+      <div class="faq-answer">
+        <p>Through regular assessments, timed practice tests, and one-on-one feedback sessions. Parents receive periodic updates on their child's performance and areas of improvement.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How many students are in each session?</div>
+      <div class="faq-answer">
+        <p>We keep batch sizes very small to ensure personalised attention. Both one-on-one and small group sessions (up to 3 students) are available.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card mt-32 text-center">
+    <p style="margin-bottom:14px;color:var(--text);">Still have questions? We're happy to help.</p>
+    <a href="contact.html" class="cta">Get in Touch →</a>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2026 <strong>Mrs. Selvi Packiarajan</strong> — Home Tuition Portal, Chennai &nbsp;·&nbsp; <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
